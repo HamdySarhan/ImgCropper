@@ -4,9 +4,10 @@
 #include "ui_ImgCropper.h"
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/imgproc.hpp>
-#include <opencv2/highgui.hpp>
+#include <opencv2/highgui/highgui.hpp>
 #include <qimage.h>
 #include<QFileDialog>
+#include <sstream>
 #include <QFile>
 #include <QRegularExpression>
 #include <QRegularExpressionMatch>
@@ -36,6 +37,9 @@
 #include <sstream>
 #include <vector>
 #include<QDir>
+#include <QFileInfo>
+#include <direct.h>
+#include <opencv2/core/core.hpp>
 
 
 class ImgCropper : public QMainWindow 
@@ -45,9 +49,10 @@ class ImgCropper : public QMainWindow
 public:
     ImgCropper(QWidget *parent = Q_NULLPTR);
     void readImage();
-    //std::string transPath();
-    //std::string next();
-    //std::string previous();
+    std::string transPath();
+   // std::string next();
+   // std::string previous();
+    void go();
 private:
     Ui::ImgCropperClass ui;
 };

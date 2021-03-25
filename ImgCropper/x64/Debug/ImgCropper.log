@@ -1,2 +1,5 @@
-﻿  ImgCropper.cpp
+﻿  moc ImgCropper.h
+  ImgCropper.cpp
+  main.cpp
+  moc_ImgCropper.cpp
   ImgCropper.vcxproj -> C:\Users\H.Sarhan\source\repos\ImgCropper\x64\Debug\ImgCropper.exe

@@ -6,76 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1147</width>
-    <height>692</height>
+    <width>492</width>
+    <height>121</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>ImgCropper</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Aspect Ratio: H</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="Rh">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>0</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="Rw">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>0</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>0</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>W</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="image">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>30</y>
-      <width>1141</width>
-      <height>561</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pBp">
     <property name="geometry">
      <rect>
@@ -102,18 +40,76 @@
      <string>&gt;</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="load">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>0</y>
-      <width>91</width>
-      <height>23</height>
+      <x>10</x>
+      <y>10</y>
+      <width>456</width>
+      <height>58</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Load Image</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Path</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="path1"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="go1">
+         <property name="text">
+          <string>GO!</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="combo1"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Aspect Ratio: H</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="Rh"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>W</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="Rw"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="load">
+         <property name="text">
+          <string>Load Image</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -121,7 +117,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1147</width>
+     <width>492</width>
      <height>21</height>
     </rect>
    </property>
